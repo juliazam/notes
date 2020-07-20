@@ -278,6 +278,9 @@ node_modules/
 # Visual Studio 6 build log
 *.plg
 
+# Visual Studio workspace file
+*.code-workspace
+
 # Visual Studio 6 workspace options file
 *.opt
 
