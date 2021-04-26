@@ -6,7 +6,7 @@ npm init -y
 
 2. Install Gulp and Gulp modules to create tasks that will automate SASS->CSS transpilation.
 
-..* Check if node-sass module installed. This module transpile *.scss into *.css files.
+* Check if node-sass module installed. This module transpile *.scss into *.css files.
 ```
 node-sass -v
 ```
