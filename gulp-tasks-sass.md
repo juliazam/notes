@@ -16,7 +16,7 @@ If not, install it globally (with -g option):
 npm install -g node-sass
 ```
 
-..* Install Gulp (globally) itself.
+* Install Gulp (globally) itself.
 ```
 npm install -g gulp
 ```
@@ -25,26 +25,26 @@ And locally for development:
 npm i --save-dev gulp
 ```
 
-..* Install gulp-sass locally for development invironment.
+* Install gulp-sass locally for development invironment.
 ```
 npm i --save-dev gulp-sass
 ```
 
-..* To connect small *.scss files to one install gulp-concat for development invironment.
+* To connect small *.scss files to one install gulp-concat for development invironment.
 ```
 npm i --save-dev gulp-concat
 ```
 
-..* To have clean *.css files (minified) and with right prefixes install next modules for development invironment.
+* To have clean *.css files (minified) and with right prefixes install next modules for development invironment.
 ```
 npm i --save-dev gulp-clean-css gulp-autoprefixer
 ```
 
-..* To rename and delete files install gulp-rename and del modules. As development dependencies as well.
+* To rename and delete files install gulp-rename and del modules. As development dependencies as well.
 ```
 npm i --save-dev gulp-rename del
 ```
-*All commands in one*
+## *All commands in one*
 ```
 npm i --save-dev gulp gulp-sass gulp-concat gulp-clean-css gulp-autoprefixer gulp-rename del
 ```
