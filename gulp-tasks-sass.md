@@ -1,12 +1,15 @@
-1. Create package.json file. It helps the node package manager (npm) keep track of the npm packages installed. 
+# Create Gulp tasks for SASS->CSS transpilation
+
+1. Create _package.json_ file. 
+It helps the **node package manager** (npm) keep track of the npm packages installed. 
 ```
 npm init -y
 ```
 *Option -y used to skip the questionnaire altogether.*
 
-2. Install Gulp and Gulp modules to create tasks that will automate SASS->CSS transpilation.
+2. Install Gulp and Gulp modules.
 
-* Check if node-sass module installed. This module transpile *.scss into *.css files.
+* Check if _node-sass_ module installed. This module transpile __*.scss__ into __*.css__ files.
 ```
 node-sass -v
 ```
@@ -16,7 +19,8 @@ If not, install it globally (with -g option):
 npm install -g node-sass
 ```
 
-* Install Gulp (globally) itself.
+* Install Gulp itself.
+Globally:
 ```
 npm install -g gulp
 ```
@@ -25,33 +29,33 @@ And locally for development:
 npm i --save-dev gulp
 ```
 
-* Install gulp-sass locally for development invironment.
+* Install _gulp-sass_ locally for development invironment.
 ```
 npm i --save-dev gulp-sass
 ```
 
-* To connect small *.scss files to one install gulp-concat for development invironment.
+* To connect small __*.scss__ files to one install _gulp-concat_ for development invironment.
 ```
 npm i --save-dev gulp-concat
 ```
 
-* To have clean *.css files (minified) and with right prefixes install next modules for development invironment.
+* To have clean __*.css__ files (minified) and with right prefixes install next modules for development invironment.
 ```
 npm i --save-dev gulp-clean-css gulp-autoprefixer
 ```
 
-* To rename and delete files install gulp-rename and del modules. As development dependencies as well.
+* To rename and delete files install _gulp-rename_ and _del_ modules as development dependencies as well.
 ```
 npm i --save-dev gulp-rename del
 ```
-## *All commands in one*
+**All commands in one**
 ```
 npm i --save-dev gulp gulp-sass gulp-concat gulp-clean-css gulp-autoprefixer gulp-rename del
 ```
 
-Check package.json file to make sure that all development dependencies are installed.
+Check _package.json_ file to make sure that all development dependencies are installed.
 
-3. Create gulpfile.js file in the root of project. At the beginning of file configure variables.
+3. Create _gulpfile.js_ file in the root of project. At the beginning of file configure variables.
 ```
 const gulp = require('gulp');
 const concatSASS = require('gulp-concat');
