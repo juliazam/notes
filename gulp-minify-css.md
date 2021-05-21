@@ -1,6 +1,7 @@
 # Create Gulp tasks for transpiling SCSS-files into minified CSS-files
 
 1. __Node.js and Gulp__
+
 Check both are installed glogally:
 ```
 node -v
@@ -18,12 +19,14 @@ npm i gulp -g
 ```
 
 2. __package.json__
+
 Create a __package.json__ file for the project. It helps __npm__ keep track of the other packages installed.
 ```
 npm init
 ```
 
 3. __Install packages__
+
 All packages will be used only during development, thus not nescessary to install them globally. Use _--save-dev_ flag during installation.
 * install __gulp__ locally
 * install __del__ package to delete files
@@ -36,6 +39,7 @@ All packages will be used only during development, thus not nescessary to instal
 npm i gulp, del, gulp-concat, gulp-sass, gulp-autoprefixer, gulp-clean-css, gulp-rename --save-dev
 ```
 4. __gulpfile.js__
+
 ```
 const { src, dest, watch, series }  = require( 'gulp' );
 
