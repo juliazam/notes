@@ -139,7 +139,7 @@ const blockEditorCSS = series( convertBlockEditorCSS, minifyBlockEditorCSS );
 const blockEditorAdminCSS = series( convertBlockEditorAdminCSS, minifyBlockEditorAdminCSS );
 
 // Function to track changes in  *.scss files and execute minification
-function tracking() {
+function watching() {
     watch( [ theme.src + '*.scss' ], themeCSS );
     watch( [ themeAdmin.src + scssFile ], adminThemeCSS );
     watch( [ blockEditor.src + scssFile ], blockEditorCSS );
@@ -147,5 +147,5 @@ function tracking() {
 }
 
 // Register task for public
-exports.tracking = tracking;
+exports.watching = watching;
 ```
