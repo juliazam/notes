@@ -1,4 +1,4 @@
-# Create Gulp tasks for transpiling SCSS-files into minified CSS-files
+# Transpile SCSS-files into minified CSS-files 'on fly'
 
 1. __Node.js and Gulp__
 
