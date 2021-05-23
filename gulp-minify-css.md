@@ -34,6 +34,7 @@ All packages will be used only during development, thus not nescessary to instal
 npm i gulp, del, gulp-concat, gulp-sass, gulp-autoprefixer, gulp-clean-css, gulp-rename --save-dev
 ```
 4. __gulpfile.js__
+
 I'm mostly use gulp tasks during Wordpress themes or plugins development. I have all my small \_*.scss files in _assets/scss/_  folder (this is my source folder), so before converting them into css-file, I have to have gather them in one _styles.sccs_ file. But if I already have _styles.scss_ file, I have to delete it first, because I didn't find how to overwrite the existing file, __gulp-sass__ always append it (if you know how to do that, please, let me know). 
 
 Then I convert _styles.scss_ into _styles.css_ and save it in _assets/css/_ folder (this is my destination folder that then goes to production). The last step is to minify _styles.css_ to _styles.min.css_ (the file to enqueue in _functions.php_).
